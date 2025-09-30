@@ -1,0 +1,64 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2761
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red24\green26\blue30;\red0\green0\blue0;\red0\green128\blue19;
+}
+{\*\expandedcolortbl;;\cssrgb\c12157\c13725\c15686;\cssrgb\c0\c0\c0;\csgenericrgb\c0\c50196\c7451;
+}
+\margl1440\margr1440\vieww14760\viewh12000\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 =============================================================================================\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf2 \expnd0\expndtw0\kerning0
+Quantifying Zebrafish Skin Patterns Using the Sweeping-plane Filtration Topological Data Analysis\cf0 \kerning1\expnd0\expndtw0 \
+=============================================================================================\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf3 Codes are associated with the manuscript titled:\
+"Quantifying Topological Features and Irregularities in Zebrafish Patterns Using the Sweeping-plane Filtration"\
+\
+Version 1.0\
+(C) 2025/09/30\
+Nour Khoudari, John T. Nardini, Alexandria Volkening\cf0 \
+\
+A sweeping-plane filtration TDA pipeline \cf3 that:\
+\
+1. Generates binary images from zebrafish skin pattern simulation data based on a (TDA informed) user defined pixel size. \
+Simulations correspond to an agent-based model [A. Volkening and B. Sandstede, Iridophores as a source of robustness \
+in zebrafish stripes and variability in Danio patterns, Nat. Commun., 9 (2018)] and can be found on Figshare: M. McGuirl, \
+A. Volkening, and B. Sandstede, Zebrafish simulation data, 2020.\
+\
+2. Computes persistence homology \
+\
+3. Classifies and quantifies binary images of patterns based on persistence barcodes.\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+\
+=============================================================================================\
+Files\
+=============================================================================================\
+\
+generate_binary_image.m      	      	\cf3 generates binary image from simulation data based on a user defined pixel size.\
+						We use a pixel size stepX = 80 [\\mum] and two data set of 1000 simulation each, \
+						the user can choose between two data sets\
+						dataset = 1 for wild-type zebrafish skin patterns\
+						dataset = 2 for pfeffer mutant zebrafish skin patterns
+\f1\fs20 \cf4 \
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf3 \
+						Simulation data sets used here can be found on Figshare: M. McGuirl, A. Volkening, \
+                       				and B. Sandstede, Zebrafish simulation data, 2020.
+\f1\fs20 \cf4 \
+
+\f0\fs24 \cf3 \
+\
+methodsNardini_periodic.py		methods of sweeping-plane filtrations in TDA, adapted from the codes associated \
+						with the paper: J. T. Nardini, B. J. Stolz, K. B. Flores, H. A. Harrington, and \
+						H. M. Byrne, 	Topological data analysis distinguishes parameter regimes in \
+						the Anderson-Chaplain model of angiogenesis, PLOS Comput. Biol., 17 (2021)\
+\
+wrapperZebrafishCA_periodic.py		 computes persistence homology and uses methodsNardini_periodic.py\
+\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0 \
+classification_and_quantification.m     	main code that loads all persistence summaries to classify and quantify patterns}

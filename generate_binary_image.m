@@ -22,7 +22,8 @@
 %   dataset = 1 for wild-type zebrafish skin patterns
 %   dataset = 2 for pfeffer mutant zebrafish skin patterns
 %   Both data set can be found on Figshare: M. McGuirl, A. Volkening, 
-%                       and B. Sandstede, Zebrafish simulation data, 2020.
+%   and B. Sandstede, Zebrafish simulation data, 2020.
+%   https://figshare.com/projects/Zebrafish_simulation_data/72689
 %   
 %   Outputs:
 %   Binary images generated from simulation data

@@ -13,7 +13,8 @@ A sweeping-plane filtration TDA pipeline that:
 1. Generates binary images from zebrafish skin pattern simulation data based on a (TDA informed) user defined pixel size. 
 Simulations correspond to an agent-based model [A. Volkening and B. Sandstede, Iridophores as a source of robustness 
 in zebrafish stripes and variability in Danio patterns, Nat. Commun., 9 (2018)] and can be found on Figshare: M. McGuirl, 
-A. Volkening, and B. Sandstede, Zebrafish simulation data, 2020.
+A. Volkening, and B. Sandstede, Zebrafish simulation data, 2020: 
+https://figshare.com/projects/Zebrafish_simulation_data/72689
 
 2. Computes persistence homology 
 
@@ -32,12 +33,12 @@ generate_binary_image.m      	      	generates binary image from simulation data
 										Simulation data sets used here can be found on Figshare: M. McGuirl, A. Volkening, 
                        					and B. Sandstede, Zebrafish simulation data, 2020.
 
-methodsNardini_periodic.py				methods of sweeping-plane filtrations in TDA, adapted from the codes associated 
+periodic_sweeping_filtration_method.py  methods of sweeping-plane filtrations in TDA, adapted from the codes associated 
 										with the paper: J. T. Nardini, B. J. Stolz, K. B. Flores, H. A. Harrington, and 
 										H. M. Byrne, Topological data analysis distinguishes parameter regimes in 
 										the Anderson-Chaplain model of angiogenesis, PLOS Comput. Biol., 17 (2021)
 
-wrapperZebrafishCA_periodic.py		 	computes persistence homology and uses methodsNardini_periodic.py
+compute_persistence_homology.py		 	computes persistence homology and uses methodsNardini_periodic.py
 
 
-classification_and_quantification.m     main code that loads all persistence summaries to classify and quantify patterns
+classify_and_quantify_images.m          main code that loads all persistence summaries to classify and quantify patterns

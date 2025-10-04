@@ -23,8 +23,9 @@
 #   dataset = 2 for pfeffer mutant zebrafish skin patterns
 #   The binary images are generated for pixel size stepX = 80 \mum using
 #   generate_binary_image.m and the simulation data used can be found on Figshare:
-#   M. McGuirl, A. Volkening, and B. Sandstede, Zebrafish simulation data, 2020.
-#   
+#   M. McGuirl, A. Volkening, and B. Sandstede, Zebrafish simulation data, 2020
+#   https://figshare.com/projects/Zebrafish_simulation_data/72689
+#
 #   Outputs:
 #   .txt files containing persistence homology of sweeping in all four
 #   directions across binary images in the data set
